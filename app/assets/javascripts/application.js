@@ -20,6 +20,14 @@
 //= require semantic-ui
 
 
-$(document).on('turbolinks:load', function() {
+$(document).on('turbolinks:load', function () {
+  // Semantic UI
+
+  // Enable dropdown by targetting.
   $('.ui.dropdown').dropdown();
+
+  // Enable closing flash messages.
+  $('.message .close').on('click', function () {
+    $(this).closest('.message').transition('fade');
+  });
 })
