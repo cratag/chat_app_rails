@@ -10,6 +10,7 @@
       <div class="ui small feed" id="message-container">
         <!-- How does this actually know I want to render
         a partial (messages/_message.html.erb) iterating each message? -->
+        <!-- Fernando Resp: It know the partial to render because of the name of the model. (Rails is very strong on conventions) -->
         <%= render @messages %>
       </div>
     </div>
